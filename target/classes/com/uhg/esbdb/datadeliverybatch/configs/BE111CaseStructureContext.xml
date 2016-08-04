@@ -15,13 +15,11 @@
 		<property name="connectionFactory" ref="connectionFactory" />
 		<property name="defaultDestination" ref="destination" />
 	</bean>
-	
 	<bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
 		<property name="brokerURL">
 			<value>tcp://srikanth-pc:61616</value>
 		</property>
 	</bean>
-	
 	<bean id="destination" class="org.apache.activemq.command.ActiveMQQueue">
 		<constructor-arg value="A5701DSR.BE111_EBILL_CASE_STRUCTURE_QUEUE" />
 	</bean>
