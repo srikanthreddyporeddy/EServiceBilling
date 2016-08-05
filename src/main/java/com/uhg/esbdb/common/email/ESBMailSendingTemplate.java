@@ -27,7 +27,7 @@ public class ESBMailSendingTemplate {
 
 		MimeMessage mimeMessage = new MimeMessage(session);
 
-		mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("sreddi177@gmail.com"));
+		mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("asha5293@gmail.com"));
 		mimeMessage.setSubject("Confidential Information");
 
 		Multipart multipart = new MimeMultipart();
@@ -43,7 +43,7 @@ public class ESBMailSendingTemplate {
 		mimeMessage.setContent(multipart);
 
 		Transport transport=session.getTransport("smtp");
-		transport.connect("smtp.gmail.com", "bashasrinivas96@gmail.com", "unitedamerica");
+		transport.connect("smtp.gmail.com", "asha5293@gmail.com", "shobhakrishna");
 		transport.sendMessage(mimeMessage, mimeMessage.getAllRecipients());
 		System.out.println(EDDCommonConstants.PROCESSED_SENDING_MAIL);
 		transport.close();
